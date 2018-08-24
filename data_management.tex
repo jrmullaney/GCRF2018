@@ -1,0 +1,74 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,bindingoffset=0cm,%
+            left=2cm,right=2cm,top=2cm,bottom=2cm,%
+            footskip=0.5cm]{geometry}
+\usepackage[pdftex]{graphicx}
+\usepackage{multicol}
+
+%\usepackage{psfig}
+
+\usepackage{siunitx,amsmath,amssymb}
+
+\usepackage{sectsty}
+\sectionfont{\fontsize{12}{15}\selectfont}
+\subsectionfont{\fontsize{11}{15}\selectfont}
+
+%\renewcommand*\sfdefault{phv}
+%\renewcommand{\familydefault}{\sfdefault}
+\makeatletter
+\newenvironment{tablehere}
+  {\def\@captype{table}}
+  {}
+
+\newenvironment{figurehere}
+  {\def\@captype{figure}}
+  {}
+\makeatother
+
+\begin{document}
+%\title{Broadening the impact of astronomical data handling\vspace{-2ex}}
+%\maketitle
+\setcounter{figure}{0}
+\noindent
+{\LARGE \bf From Stars to Baht: Broadening the economic impact of \\
+astronomical data handling techniques in Thailand}
+
+\vspace{3mm}
+\noindent
+{\LARGE \bf Data management plan}
+
+\vspace{3mm}
+\noindent
+We will ensure from the outset that protocols are in place to systematically manage all data associated with the project. By the nature of the research, the project will collect and produce diverse datasets. The raw data we will receive from our external partners will be in the form of digital values and strings in either ascii (.csv) or excel spreadsheets. One of the aims of this project is to make this data more searchable and accessible for our external partners by setting up relational and/or non-relational databases to contain this data. The data derived from our ML analysis can be stored more simply, in ascii files, for example. 
+
+\vspace{2mm}
+\noindent
+Because of their potentially commercially sensitive nature, any data transferred between the external partners and our team will be done so in an encrypted state (whether by physical media such as USB stick or over the internet). Once on site at MFU, the raw data will immediately be backed-up on MFU's multiple backup servers. Once this has been done, raw data will be sent (via ssh, which is encrypted once the connection is established) to the UK to be backed up on Sheffield's secure servers. A Structured Query Language (SQL) database will be created to track all digital files.
+
+\vspace{2mm}
+\noindent
+Once the original raw data are backed-up on both sites, work will start on researching the best means to incorporate the data into a distributed non-relational database. The data management system we will use for this is {\it Hadoop}, which is widely used throughout the IT sector, thus ensuring the long-term readability of the data. Most of our data analysis will take place within the {\it Orange} data mining software environment, which is an open-source and under constant development. These steps ensure that the data collected and produced by the project will be readable for at least 10 years. 
+
+\vspace{2mm}
+\noindent
+The main data that will be of use to other researchers are descriptions of the technologies we will develop to address the needs of the external partners. As with any research, our project will involve trial and error - testing different databasing and analysis techniques. The main publishable outcome of the work will be the results from these tests in terms of accuracy, reliability and speed of the database system and the ML-based analysis. By signing the Letter of Support, our external partners already have an understanding of this. Where not commercially sensitive, all raw data will be made publicly available, together with any non-commercially sensitive derived data. This includes data from Pibulsongkram Rajabhat University (User behaviour and service provision) and MFU (Academic and educational development office and M-Store).
+
+\vspace{2mm}
+\noindent
+ The outcome of our research  -- the completed database design and working model -- will be made available by enacting the Release to Public policies of Mae Fah Luang University. We will package our data analysis algorithms in an {\it Orange} module as well as providing a self-contained software package complete with user interface to the external partner. Any non-commercially sensitive code will be shared publicly using the GitHub software sharing website.
+
+% to protect our research findings, and publicly available Internet resources to share our results.  All aspects of the research will be carefully tracked, stored, and published.  The work detailed in the preceding proposal can be anticipated to produce three broad categories of data:  computer software, user-specific data, and models. The computer software category includes not only the Hadoop ecosystem, but also the Orange –Data mining tool (open source). The data category includes data collections and associated meta-data specific to different pre-identified users. An officially signed agreement on data protection between the research team and each of the users is to be implemented. The model category includes the development of frameworks and algorithms, which will be logged through both handwritten research notebooks as well as digitally generated documents.   
+
+
+
+% \vspace{2mm}
+% \noindent
+% To ensure the safety of the data, we will use the School of Information Technology’s existing file server to periodically backup the materials.  A Structured Query Language (SQL) database will be created to track the digital documents. The completed design and working model will be made available by enacting the Release to Public policies of Mae Fah Luang University. We plan to package our algorithm in an Orange module as well as a self-contained software complete with user interface. Code will be developed using volume shadow copy technology, which will allow the recovery of prior iterations for quality control.  
+
+% \vspace{2mm}
+% \noindent
+% The results of the research performed under this proposal will be disseminated primarily through publication in research journals and conference presentations, subject to the user approval. All electronic data generated by proposal research will be redundantly archived.  Locally, the laboratory has a secure server on which all information is stored.  The server hard drives are set up in a RAID that is capable of full recovery even in the case of multiple simultaneous disk failure.
+% Additionally, the server drives are backed up on an independent server operated by the School of Information Technology.  This will allow full recovery of data in the even of catastrophic failure of the local laboratory server. All of these systems will be in place for the 3-year minimum proscribed by the NSF, and the foreseeable future following that.
+
+
+\end{document}
